@@ -31,7 +31,7 @@ body {
         height: 100%;
         position: absolute;    
 }
-/* Movimiento fots carousel con animista */
+/* Movimiento fotos carousel con animista */
 .carousel-item {
 	-webkit-animation: kenburns-top 5s ease-out both;
 	        animation: kenburns-top 5s ease-out both;
