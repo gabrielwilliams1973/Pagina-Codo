@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/242f4f4f26.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Comprar</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <!--Menu de navegacion-->
+
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img src="./img/codoacodo.png" alt="" width="100px"
+        /></a>
+        <a class="navbar-brand" href="#">Conf Bs As</a>
+        <div class="card-body">
+          <a
+            class="fa-brands fa-twitter fa-xl"
+            style="color: #ffffff; margin-left: 3%"
+            href=""
+          ></a>
+          <a
+            class="fa-brands fa-facebook fa-xl"
+            style="color: #f0f0f0; margin-left: 3%"
+            href=""
+          ></a>
+          <a
+            class="fa-brands fa-instagram fa-xl"
+            style="color: #ffffff; margin-left: 3%"
+            href=""
+          ></a>
+          <a
+            class="fa-brands fa-whatsapp fa-xl"
+            style="color: #f7f7f8; margin-left: 3%"
+            href=""
+          ></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="collapsibleNavbar"
+          style="justify-content: end"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Los Oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Lugar y Fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Conviértete en Orador</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-success" href="#">
+          Comprar Tickets
+        </button>
+      </nav>
+    </header>
+    <!-- Aqui Termina Menu de Navegacion-->
+
+    <main class="container">
+      <div class="container-fluid d-flex justify-content-center">
+        <!--Aqui comienza Tipo de descuento-->
+        <div class="card-deck mt-4" id="">
+          <div class="card border-primary">
+            <div class="card-body">
+              <h5 class="card-title text-center">Estudiante</h5>
+              <p class="card-text text-center">Tienen un descuento</p>
+              <h5 class="card-text text-center">80%</h5>
+              <p class="card-text text-center">* presentar documentacion</p>
+            </div>
+          </div>
+          <div class="card border-success">
+            <div class="card-body">
+              <h5 class="card-title text-center">Trainee</h5>
+              <p class="card-text text-center">Tienen un descuento</p>
+              <h5 class="card-text text-center">50%</h5>
+              <div class="container" id="document">
+                <p class="card-text text-center">* presentar documentacion</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-center">Junior</h5>
+              <p class="card-text text-center">Tienen un descuento</p>
+              <h5 class="card-text text-center">15%</h5>
+              <p class="card-text text-center">* presentar documentacion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Aqui termina Tipo de descuento-->
+
+      <div class="container-fluid d-flex justify-content-center">
+        <!--Card 1-->
+        <div class="card-group" style="width: 50rem">
+          <div class="card border border-primary text-center mx-1">
+            <div class="card-body">
+              <p class="card-text h4">Estudiante</p>
+              <p class="card-text">Tiene un descuento</p>
+              <p class="card-text"><strong>80%</strong></p>
+              <p class="card-text text-muted">
+                <small> *presentar documentación</small>
+              </p>
+            </div>
+          </div>
+          <!--Card 2-->
+          <div class="card border border-success text-center mx-1">
+            <div class="card-body">
+              <p class="card-text h4">Trainee</p>
+              <p class="card-text">Tiene un descuento</p>
+              <p class="card-text"><strong>50%</strong></p>
+              <p class="card-text text-muted">
+                <small> *presentar documentación</small>
+              </p>
+            </div>
+          </div>
+          <!--Card 3-->
+          <div class="card border border-warning text-center mx-1">
+            <div class="card-body">
+              <p class="card-text h4">Junior</p>
+              <p class="card-text">Tiene un descuento</p>
+              <p class="card-text"><strong>15%</strong></p>
+              <p class="card-text text-muted">
+                <small> *presentar documentación</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Cards descuento  -->
+
+      <div>
+        <p class="text-uppercase pt-2 mb-0 text-center">
+          <small>venta</small>
+        </p>
+        <p class="h3 text-uppercase text-center">valor de ticket $200</p>
+      </div>
+
+      <!-- Formulario  -->
+
+      <div class="container-fluid col-9">
+        <form class="row" id="compraEntradas">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="inputNombre"
+              placeholder="Nombre"
+              aria-label="Nombre"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="inputApellido"
+              placeholder="Apellido"
+              aria-label="Apellido"
+            />
+          </div>
+          <div class="col-md-12 mt-3">
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              placeholder="Correo"
+              aria-label="Correo"
+            />
+          </div>
+
+          <div class="col-md-6 mt-3">
+            <label for="inputCantidad" class="form-label">Cantidad</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputCantidad"
+              placeholder="Cantidad"
+            />
+          </div>
+          <div class="col-md-6 mt-3">
+            <label for="inputCategoria" class="form-label">Categoría</label>
+            <select id="inputCategoria" class="form-control col-md-12">
+              <option selected>Estudiante</option>
+              <option>Trainee</option>
+              <option>Junior</option>
+              <option>General</option>
+            </select>
+          </div>
+
+          <div class="form col-md-12 mt-4">
+            <div class="alert alert-primary" style="height: 45px">
+              <p>Total a Pagar $</p>
+            </div>
+          </div>
+
+          <div class="col mt-2">
+            <button
+              class="btn btn-success col-sm-12 botonEnviar"
+              type="button"
+              id="btnBorrar"
+              onclick="borrar();"
+            >
+              Borrar
+            </button>
+          </div>
+          <div class="col mt-2">
+            <button
+              class="btn btn-success col-sm-12 botonEnviar"
+              type="button"
+              id="btnResumen"
+              onclick="calcularTotal();"
+            >
+              Resumen
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- fin de Formulario  -->
+
+      <br />
+    </main>
+
+    <script src="/JS/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer>
+    <div class="">
+      <ul class="navbar bg-dark justify-content-center mt-4" id="pie">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#"
+            >Preguntas <br />
+            Frecuentes</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contáctanos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Prensa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Conferencias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#"
+            >Términos y <br />
+            Condiciones</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Estudiantes</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</html>

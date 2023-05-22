@@ -1,50 +1,50 @@
-*{
-        margin: 0;
-        padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
 }
- 
+
 body {
-        background-color: rgb(255, 255, 255);}
-
-
-.card-text{
-        margin-top: 15%;
-        margin-right: 3%;
-        font-size: 1rem;     
+  background-color: rgb(255, 255, 255);
 }
-#conferencia{
-        text-align: left;
+
+.card-text {
+  margin-top: 15%;
+  margin-right: 3%;
+  font-size: 1rem;
+}
+#conferencia {
+  text-align: left;
+}
+u {
+  text-decoration-style: dotted;
 }
 
 /* cambiar fondo de imagen de fotos de carousel */
 
-#carouselExampleCaptions{
-        position: relative;
-        
+#carouselExampleCaptions {
+  position: relative;
 }
-.carousel-item::before{
-        content: '';
-        font-family: arial;
-        background-color: rgba(0,0,0,.45);
-        width: 100%;
-        height: 100%;
-        position: absolute;    
+.carousel-item::before {
+  content: "";
+  font-family: arial;
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 /* Movimiento fotos carousel con animista */
 .carousel-item {
-	-webkit-animation: kenburns-top 5s ease-out both;
-	        animation: kenburns-top 5s ease-out both;
+  -webkit-animation: kenburns-top 5s ease-out both;
+  animation: kenburns-top 5s ease-out both;
 }
 /*w3schools linearGradient*/
-#pie{
-        background: linear-gradient(to right, #023047, #023047, #005f73);
-    }
+#pie {
+  background: linear-gradient(to right, #023047, #023047, #005f73);
+}
 /*w3schools linearGradient*/
 
 #formulario {
-        font-size:larger;
-        
+  font-size: larger;
 }
 
 /* ----------------------------------------------
@@ -54,4 +54,33 @@ body {
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
- @-webkit-keyframes kenburns-top{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 16%;transform-origin:50% 16%}100%{-webkit-transform:scale(1.25) translateY(-15px);transform:scale(1.25) translateY(-15px);-webkit-transform-origin:top;transform-origin:top}}@keyframes kenburns-top{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 16%;transform-origin:50% 16%}100%{-webkit-transform:scale(1.25) translateY(-15px);transform:scale(1.25) translateY(-15px);-webkit-transform-origin:top;transform-origin:top}}
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+
+/*Css de pagina de compra*/
