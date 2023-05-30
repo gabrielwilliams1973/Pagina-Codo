@@ -135,7 +135,12 @@
       <!-- Formulario  -->
 
       <div class="container-fluid d-flex justify-content-center col-sm-9">
-        <form class="row" id="compraEntradas" style="width: 52rem">
+        <form
+          class="row"
+          id="compraEntradas"
+          style="width: 52rem"
+          action="action_page.php"
+        >
           <div class="col-md-6 mb-3">
             <input
               type="text"
@@ -183,7 +188,7 @@
             <div
               class="alert alert-primary"
               style="height: 45px"
-              id="totalaPagar"
+              id="inputTotalaPagar"
             >
               <p>Total a Pagar $</p>
             </div>
@@ -194,7 +199,7 @@
               class="btn btn-success col-sm-12 botonEnviar"
               type="button"
               id="btnBorrar"
-              onclick="borrar();"
+              onclick="limpiarFormulario();"
             >
               Borrar
             </button>

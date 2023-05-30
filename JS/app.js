@@ -3,13 +3,13 @@ var valorTicket = 200;
 const cantidadDeEntradas = document.getElementById("inputCantidad");
 const categoria = document.getElementById("inputCategoria");
 const calcular = document.getElementById("btnResumen");
-const totalaPagar = document.getElementById("totalaPagar");
+const totalaPagar = document.getElementById("inputTotalaPagar");
 
 function validarCantidad() {
   const cantidad = cantidadDeEntradas.value.trim();
 
   if (!cantidad.match(/^\d+$/)) {
-    alert("Ingrese un número entero en la casilla de cantidad de entradas.");
+    //alert("Ingrese un número entero en la casilla de cantidad de entradas.");
     cantidadDeEntradas.value = "";
   }
 }
@@ -21,7 +21,7 @@ function calcularTotal() {
   const cantidad = parseInt(cantidadDeEntradas.value);
 
   if (isNaN(cantidad) || cantidad % 1 !== 0) {
-    alert("Ingrese un número entero en la casilla de cantidad de entradas.");
+    //alert("Ingrese un número entero en la casilla de cantidad de entradas.");
     return;
   }
 
@@ -35,4 +35,8 @@ function calcularTotal() {
 
   totalaPagar.innerHTML = "$" + " " + total;
 }
-console.log(cantidadDeEntradas.value);
+
+function limpiarFormulario() {
+  document.getElementById("compraEntradas").reset();
+  totalaPagar.innerHTML = "Total a Pagar $";
+}
