@@ -33,7 +33,7 @@ function calcularTotal() {
     total = cantidadDeEntradas.value * valorTicket * 0.85;
   }
 
-  totalaPagar.innerHTML = "$" + " " + total;
+  totalaPagar.innerHTML = "Total a Pagar $" + " " + total;
 }
 
 function limpiarFormulario() {
