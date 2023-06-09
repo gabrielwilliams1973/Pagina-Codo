@@ -135,7 +135,7 @@
     <div class="container-fluid d-flex justify-content-center col-sm-9">
       <form
         class="row"
-        id="compraEntradas"
+        id="formulario"
         style="width: 52rem"
         action="action_page.php"
       >
@@ -145,6 +145,7 @@
             class="form-control"
             id="inputNombre"
             placeholder="Nombre"
+            required
           />
         </div>
         <div class="col-md-6">
@@ -153,6 +154,7 @@
             class="form-control"
             id="inputApellido"
             placeholder="Apellido"
+            required
           />
         </div>
         <div class="col-md-12 mt-3">
@@ -161,6 +163,7 @@
             class="form-control"
             id="inputEmail"
             placeholder="Correo"
+            required
           />
         </div>
 
@@ -211,6 +214,17 @@
             onclick="calcularTotal();"
           >
             Resumen
+          </button>
+        </div>
+        <div class="col-12 mt-4">
+          <button
+            class="btn btn-success col-sm-12 botonEnviar"
+            type="button"
+            id="envioDatos"
+            input
+            type="submit"
+          >
+            Comprar <a href=""></a>
           </button>
         </div>
       </form>

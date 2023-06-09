@@ -1,5 +1,6 @@
 var valorTicket = 200;
 
+const validarEmail = document.getElementById("inputEmail");
 const cantidadDeEntradas = document.getElementById("inputCantidad");
 const categoria = document.getElementById("inputCategoria");
 const calcular = document.getElementById("btnResumen");
@@ -37,6 +38,6 @@ function calcularTotal() {
 }
 
 function limpiarFormulario() {
-  document.getElementById("compraEntradas").reset();
+  document.getElementById("formulario").reset();
   totalaPagar.innerHTML = "Total a Pagar $";
 }
