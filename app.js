@@ -6,6 +6,7 @@ const categoria = document.getElementById("inputCategoria");
 const calcular = document.getElementById("btnResumen");
 const totalaPagar = document.getElementById("inputTotalaPagar");
 
+//Validar valor numerico de entradas y que solo acepte numeros enteros
 function validarCantidad() {
   const cantidad = cantidadDeEntradas.value.trim();
 
@@ -16,7 +17,7 @@ function validarCantidad() {
 }
 
 cantidadDeEntradas.addEventListener("input", validarCantidad);
-
+//Calcular valor entradas
 function calcularTotal() {
   let total = 0;
   const cantidad = parseInt(cantidadDeEntradas.value);
@@ -36,7 +37,7 @@ function calcularTotal() {
 
   totalaPagar.innerHTML = "Total a Pagar $" + " " + total;
 }
-
+//limpiar formulario
 function limpiarFormulario() {
   document.getElementById("formulario").reset();
   totalaPagar.innerHTML = "Total a Pagar $";
